@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delphine Pellas — Lumbra</title>
+<meta name="description" content="Delphine Pellas, Lumbra : tableaux abstraits en bois découpé en relief, œuvres en papier découpé, monuments français découpés. Atelier à Valence, Drôme.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Delphine Pellas — Lumbra">
+<meta property="og:description" content="Tableaux abstraits en bois découpé en relief, œuvres en papier découpé, monuments français. Atelier à Valence.">
+<meta property="og:url" content="https://lumbra.fr/">
+<meta property="og:site_name" content="Lumbra">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lumbra.fr/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Delphine Pellas","jobTitle":"Artiste plasticienne","brand":{"@type":"Brand","name":"Lumbra"},"url":"https://lumbra.fr/","email":"contact@lumbra.fr","address":{"@type":"PostalAddress","addressLocality":"Valence","addressRegion":"Drôme","addressCountry":"FR"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBFBFA; --fg:#17181A; --mute:#6E7075; --faint:#9A9CA0;
+    --hair:#E6E6E3; --dark:#0B0B0C;
+    --max:1340px; --pad:clamp(22px,5vw,72px);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:Inter,system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.62;
+    -webkit-font-smoothing:antialiased}
+  h1,h2,h3,.sr{font-family:Newsreader,Georgia,serif;font-weight:400;
+    line-height:1.12;letter-spacing:0;margin:0}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  ::selection{background:var(--fg);color:var(--bg)}
+  .shell{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+
+  /* ---------- en-tête ---------- */
+  .nav{position:sticky;top:0;z-index:40;background:rgba(251,251,250,.9);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+  .nav-in{max-width:var(--max);margin:0 auto;padding:18px var(--pad);
+    display:flex;align-items:baseline;gap:clamp(18px,2.6vw,38px);flex-wrap:wrap}
+  .nav .brand{font-family:Newsreader,serif;font-size:1.62rem;line-height:1;
+    text-decoration:none;margin-right:auto;letter-spacing:0}
+  .nav .brand small{display:block;font-family:Inter,sans-serif;font-size:.63rem;
+    letter-spacing:.2em;color:var(--faint);margin-top:5px;text-transform:uppercase}
+  .nav a.lk{font-family:Newsreader,serif;font-size:1.2rem;text-decoration:none;
+    color:var(--mute);transition:color .18s;line-height:1}
+  .nav a.lk:hover{color:var(--fg)}
+
+  /* ---------- ouverture ---------- */
+  .open{padding:clamp(70px,13vh,160px) 0 clamp(40px,6vh,80px)}
+  .open h1{font-size:clamp(3.2rem,9vw,7.6rem);line-height:1.02;letter-spacing:0;font-weight:300}
+  .open .sub{font-family:Newsreader,serif;font-weight:300;font-size:clamp(1.4rem,2.7vw,2.2rem);
+    color:var(--mute);margin:clamp(18px,2.4vw,30px) 0 0;max-width:30ch;line-height:1.22}
+  .open .say{margin:clamp(30px,4vw,46px) 0 0;max-width:50ch;color:var(--mute);font-size:1.02rem}
+
+  /* ---------- gammes ---------- */
+  .gamme{padding:clamp(140px,18vh,240px) 0 clamp(120px,15vh,200px)}
+  .gamme:first-of-type{padding-top:clamp(50px,7vh,90px)}
+  .gamme::before{content:'';display:block;width:100%;height:1px;background:var(--hair);
+    margin-bottom:clamp(100px,14vh,180px)}
+  .gamme:first-of-type::before{display:none}
+  .ghead h2{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:300}
+  .ghead .intro{color:var(--mute);max-width:60ch;margin:22px 0 0;font-size:1.04rem}
+
+  /* ---------- sous-série dans papier découpé ---------- */
+  .serie{margin-top:clamp(70px,9vh,130px)}
+  .serie:first-of-type{margin-top:clamp(50px,6vw,90px)}
+  .serie h3{font-family:Newsreader,serif;font-size:1.95rem;font-weight:400;
+    letter-spacing:0;margin-bottom:12px}
+  .serie .caption{color:var(--mute);font-size:.98rem;max-width:58ch;margin-bottom:clamp(36px,4.5vw,56px)}
+
+  /* ---------- cimaise ---------- */
+  .wall{display:grid;grid-template-columns:repeat(3,1fr);
+    column-gap:clamp(24px,3.4vw,56px);row-gap:clamp(56px,6.5vw,96px)}
+  @media(max-width:980px){.wall{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.wall{grid-template-columns:1fr;row-gap:52px}}
+  article.wk{border:0;background:none;padding:0;margin:0;text-align:left;
+    font:inherit;color:inherit;display:block}
+  .work{all:unset;cursor:pointer;display:block;width:100%}
+  .plate{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .plate img{max-width:100%;max-height:100%;width:auto;height:auto;
+    object-fit:contain;transition:opacity .3s}
+  .work:hover .plate img{opacity:.78}
+  .void{width:100%;height:100%;background:#F2F2EF;display:flex;align-items:center;
+    justify-content:center;text-align:center;padding:18px;flex-direction:column;gap:8px}
+  .void .vt{font-family:Newsreader,serif;font-size:1.02rem;font-style:italic}
+  .void .vf{font-family:ui-monospace,SFMono-Regular,monospace;font-size:.64rem;
+    color:var(--faint);word-break:break-all}
+
+  /* ---------- cartel ---------- */
+  .cartel{margin-top:16px}
+  .cartel h3.l1{margin:0;font-weight:400}
+  .cartel .l1{font-family:Newsreader,serif;font-size:1.28rem;line-height:1.3;
+    letter-spacing:0}
+  .cartel .l1 i{font-style:italic}
+  .cartel .l2{font-size:.84rem;color:var(--mute);margin-top:4px;line-height:1.45}
+  .cartel .l3{font-size:.84rem;color:var(--faint);margin-top:1px}
+  .cartel .ask{display:inline-block;margin-top:9px;font-size:.8rem;text-decoration:none;
+    color:var(--fg);border-bottom:1px solid var(--hair);padding-bottom:2px;transition:.18s}
+  .cartel .ask:hover{border-color:var(--fg)}
+
+  /* ---------- l'atelier ---------- */
+  .atelier{padding:clamp(140px,18vh,240px) 0 clamp(120px,15vh,200px)}
+  .atelier::before{content:'';display:block;width:100%;height:1px;background:var(--hair);
+    margin-bottom:clamp(100px,14vh,180px)}
+  .atelier h2{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:300;margin-bottom:clamp(44px,5vw,70px)}
+  .about{display:grid;gap:clamp(42px,6vw,88px);grid-template-columns:1fr}
+  @media(min-width:900px){.about{grid-template-columns:.82fr 1.18fr;align-items:start}}
+  .portrait-box{background:#F2F2EF;aspect-ratio:3/4;display:flex;align-items:center;
+    justify-content:center;overflow:hidden}
+  .portrait-box img{width:100%;height:100%;object-fit:cover}
+  .portrait-box.empty{color:var(--faint);font-size:.82rem;padding:22px;text-align:center}
+  .about .big{font-family:Newsreader,serif;font-weight:300;font-size:clamp(1.75rem,3.1vw,2.6rem);
+    line-height:1.22;letter-spacing:0;margin:0 0 30px}
+  .about .big i{font-style:italic}
+  .about p{color:var(--mute);max-width:60ch;margin:0 0 16px}
+  .signature{margin-top:36px;font-family:Newsreader,serif;font-style:italic;
+    font-size:1.5rem;color:var(--fg)}
+
+  /* ---------- contact ---------- */
+  .contact{padding:clamp(140px,18vh,240px) 0 clamp(100px,12vh,160px)}
+  .contact::before{content:'';display:block;width:100%;height:1px;background:var(--hair);
+    margin-bottom:clamp(100px,14vh,180px)}
+  .contact h2{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:300}
+  .contact .intro{color:var(--mute);max-width:58ch;margin:22px 0 0;font-size:1.04rem}
+  .ways{display:grid;gap:clamp(30px,3.8vw,52px);margin-top:clamp(50px,6vw,80px);
+    grid-template-columns:repeat(auto-fit,minmax(218px,1fr))}
+  .way h3{font-size:1.55rem;font-weight:400;margin-bottom:11px}
+  .way p{margin:0;color:var(--mute);font-size:.95rem}
+  .way a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--hair)}
+  .way a:hover{border-color:var(--fg)}
+
+  footer{padding:50px 0 60px;font-size:.83rem;color:var(--faint);
+    border-top:1px solid var(--hair);margin-top:clamp(80px,10vh,120px)}
+  footer .shell{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+  footer a{text-decoration:none;border-bottom:1px solid var(--hair)}
+  footer a:hover{color:var(--fg)}
+
+  /* ---------- fiche œuvre ---------- */
+  .lb{position:fixed;inset:0;z-index:100;background:var(--dark);display:none;
+    align-items:center;justify-content:center;padding:clamp(16px,4vw,54px)}
+  .lb[data-open="1"]{display:flex}
+  .lb-in{display:grid;gap:clamp(22px,3vw,48px);grid-template-columns:1fr;
+    align-items:center;max-width:min(96vw,1180px);color:#FBFBFA}
+  @media(min-width:860px){.lb-in{grid-template-columns:1.45fr .55fr}}
+  .lb-img{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;position:relative}
+  .lb-img img{max-height:76vh;max-width:100%;width:auto}
+  .lb-void{width:min(70vw,440px);aspect-ratio:1/1;border:1px solid rgba(251,251,250,.2);
+    display:flex;align-items:center;justify-content:center;padding:22px;text-align:center;
+    font-size:.82rem;color:rgba(251,251,250,.55)}
+  .lb-txt .t{font-family:Newsreader,serif;font-weight:300;font-size:clamp(1.7rem,2.9vw,2.4rem);
+    line-height:1.14;letter-spacing:.006em}
+  .lb-txt .t i{font-style:italic}
+  .lb-txt .m{font-size:.88rem;color:rgba(251,251,250,.68);margin-top:14px;line-height:1.55}
+  .lb-txt .m span{display:block}
+  .lb-txt .ask{display:inline-block;margin-top:22px;font-size:.86rem;text-decoration:none;
+    color:#FBFBFA;border-bottom:1px solid rgba(251,251,250,.4);padding-bottom:3px}
+  .lb-txt .ask:hover{border-color:#FBFBFA}
+  .lb-txt .addr{font-size:.78rem;color:rgba(251,251,250,.45);margin-top:9px}
+  .lb-b{position:absolute;background:none;border:0;color:#FBFBFA;cursor:pointer;
+    opacity:.5;transition:opacity .18s;padding:14px}
+  .lb-b:hover{opacity:1}
+  .lb-x{top:12px;right:16px;font-size:1.7rem;line-height:1}
+  .lb-p,.lb-n{top:50%;transform:translateY(-50%);font-size:1.9rem;line-height:1}
+  .lb-p{left:0}.lb-n{right:0}
+
+  .plate{position:relative}
+  .nphotos{position:absolute;right:9px;bottom:9px;background:rgba(251,251,250,.93);
+    color:var(--mute);font-size:.68rem;letter-spacing:.03em;padding:3px 7px;
+    border-radius:2px;pointer-events:none;opacity:0;transition:opacity .2s}
+  .work:hover .nphotos{opacity:1}
+  .lb-thumbs{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+  .lb-thumbs button{all:unset;cursor:pointer;width:54px;height:54px;overflow:hidden;
+    opacity:.42;transition:opacity .2s;border:1px solid transparent}
+  .lb-thumbs button:hover{opacity:.8}
+  .lb-thumbs button[data-on="1"]{opacity:1;border-color:rgba(251,251,250,.75)}
+  .lb-thumbs img{width:100%;height:100%;object-fit:cover}
+  .lb-count{font-size:.76rem;color:rgba(251,251,250,.5);margin-top:10px}
+  .vue-b{position:absolute;top:50%;transform:translateY(-50%);background:rgba(11,11,12,.55);
+    border:0;color:#FBFBFA;cursor:pointer;font-size:1.5rem;line-height:1;padding:10px 12px;
+    opacity:0;transition:opacity .2s}
+  .lb-img:hover .vue-b{opacity:.7}
+  .vue-b:hover{opacity:1!important}
+  .vue-p{left:4px;border-radius:3px 0 0 3px}
+  .vue-n{right:4px;border-radius:0 3px 3px 0}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#haut">Delphine Pellas<small>Lumbra</small></a>
+    <a class="lk" href="#bois">Bois en relief</a>
+    <a class="lk" href="#papercut">Papier découpé</a>
+    <a class="lk" href="#atelier">L’atelier</a>
+    <a class="lk" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="open shell" id="haut">
+  <h1>Delphine Pellas</h1>
+  <p class="sub">Bois découpé en relief, papier découpé</p>
+  <p class="say">Œuvres découpées, assemblées et signées à l’atelier, à Valence.
+     Toutes les pièces présentées sont disponibles sauf mention contraire.</p>
+</header>
+
+<section class="gamme shell" id="bois">
+  <div class="ghead">
+    <h2>Bois en relief</h2>
+    <p class="intro">Des couches de bois découpées puis assemblées pour installer de la
+       profondeur. Le relief projette sa propre ombre, qui se déplace avec la lumière du
+       jour. L’œuvre ne se regarde jamais deux fois à l’identique.</p>
+  </div>
+  <div class="wall" data-wall="bois" style="margin-top:clamp(50px,6vw,80px)"></div>
+</section>
+
+<section class="gamme shell" id="papercut">
+  <div class="ghead">
+    <h2>Papier découpé</h2>
+    <p class="intro">Découpes fines sur papier, travaillées en superposition et mises
+       sous verre. Insectes, botanique, nervures, architectures.</p>
+  </div>
+
+  <div class="serie">
+    <h3>Éditions limitées</h3>
+    <p class="caption">Série numérotée à trente exemplaires, signée.</p>
+    <div class="wall" data-wall="papercut:edition"></div>
+  </div>
+
+  <div class="serie">
+    <h3>Monuments français</h3>
+    <p class="caption">Des architectures reconnaissables, réduites à leur silhouette et
+       redécoupées. Valence, Romans, Lyon, Brest, La Rochelle.</p>
+    <div class="wall" data-wall="papercut:monuments"></div>
+  </div>
+
+  <div class="serie">
+    <h3>Papier découpé</h3>
+    <p class="caption">Papiers découpés de la série courante, autour du végétal.</p>
+    <div class="wall" data-wall="papercut:serie"></div>
+  </div>
+</section>
+
+<section class="atelier shell" id="atelier">
+  <h2>L’atelier</h2>
+  <div class="about">
+    <div class="portrait-box">
+      <img src="images/portrait.webp" alt="Delphine Pellas, Lumbra"
+           onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.textContent='images/portrait.webp'">
+    </div>
+    <div>
+      <p class="big">Le nom <i>Lumbra</i> vient de la fusion de <i>lumière</i> et
+         d’<i>umbra</i>, l’ombre en latin. C’est l’équilibre que je cherche dans chaque
+         pièce.</p>
+      <p>Je m’appelle Delphine Pellas. Je travaille depuis mon atelier à Valence, dans
+         la Drôme. Je conçois des tableaux en bois et des œuvres en papier découpé en
+         très petites séries, ce qui garantit la singularité de chaque pièce.</p>
+      <p>La lumière et l’ombre y dialoguent avec la matière, le relief et la texture.
+         C’est pourquoi ces œuvres se regardent mieux en vrai qu’en photographie :
+         l’ombre portée change avec l’heure, et aucune image ne la restitue tout à fait.</p>
+      <p>L’atelier se visite sur rendez-vous.</p>
+      <p class="signature">Delphine</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact shell" id="contact">
+  <h2>Contact</h2>
+  <p class="intro">Pour toute demande sur une œuvre, indiquez son titre dans votre
+     message. Je réponds avec le prix, les dimensions et les modalités d’envoi.</p>
+  <div class="ways">
+    <div class="way">
+      <h3>Par écrit</h3>
+      <p><a href="mailto:contact@lumbra.fr">contact@lumbra.fr</a><br>
+         Réponse sous quelques jours.</p>
+    </div>
+    <div class="way">
+      <h3>Expositions</h3>
+      <p>J’expose une à deux fois par an dans la région de Valence.
+         Écrivez-moi pour la prochaine date.</p>
+    </div>
+    <div class="way">
+      <h3>À l’atelier</h3>
+      <p>Les œuvres se découvrent mieux en présence, l’ombre en dépend.
+         Visite sur rendez-vous.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="shell">
+    <span>Delphine Pellas — Lumbra · Valence, Drôme</span>
+    <span><a href="mentions-legales.html">Mentions légales</a></span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fiche de l’œuvre">
+  <button class="lb-b lb-x" aria-label="Fermer">&times;</button>
+  <button class="lb-b lb-p" aria-label="Œuvre précédente">&#8249;</button>
+  <button class="lb-b lb-n" aria-label="Œuvre suivante">&#8250;</button>
+  <div class="lb-in" id="lbIn"></div>
+</div>
+
+<script src="oeuvres.js"></script>
+<script>
+const ARTISTE = 'Delphine Pellas';
+const MAIL    = 'contact@lumbra.fr';
+
+const TECH = (typeof TECHNIQUES !== 'undefined') ? TECHNIQUES : {};
+const DATA = (typeof OEUVRES !== 'undefined' && Array.isArray(OEUVRES) && OEUVRES.length)
+  ? OEUVRES : [];
+
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tech = o => o.tech || TECH[o.g] || '';
+const lien = o => {
+  const s = "Demande de prix — « " + o.t + " »";
+  const b = "Bonjour,\n\nJe souhaite des informations sur l’œuvre « " + o.t + " » : prix, dimensions exactes et disponibilité.\n\nMerci.\n";
+  return "mailto:" + MAIL + "?subject=" + encodeURIComponent(s) + "&body=" + encodeURIComponent(b);
+};
+const slug = t => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
+  .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+
+document.querySelectorAll('[data-wall]').forEach(wall=>{
+  const key = wall.dataset.wall;
+  const [g, s] = key.split(':');
+  const list = DATA.filter(o => o.g===g && (s ? o.s===s : !o.s || g==='bois'));
+  wall.innerHTML = list.map(o=>{
+    const l2 = [tech(o), o.note].filter(Boolean).join(' · ');
+    return `
+    <article class="wk" id="${slug(o.t)}" itemscope itemtype="https://schema.org/VisualArtwork">
+      <meta itemprop="artMedium" content="${esc(tech(o))}">
+      <meta itemprop="creator" content="${esc(ARTISTE)}">
+      <button class="work" data-t="${esc(o.t)}" aria-label="Agrandir ${esc(o.t)}">
+        <span class="plate">
+          <img src="${esc(o.src)}" itemprop="image"
+               alt="${esc(o.t)}${o.note?', '+esc(o.note):''}, œuvre de Delphine Pellas, Lumbra" loading="lazy"
+               onerror="this.insertAdjacentHTML('afterend','<span class=\\'void\\'><span class=\\'vt\\'>${esc(o.t)}</span><span class=\\'vf\\'>${esc(o.src)}</span></span>');this.remove()">
+          ${(o.more&&o.more.length)?`<span class="nphotos">${o.more.length+1} photos</span>`:''}
+        </span>
+      </button>
+      <div class="cartel">
+        <h3 class="l1" itemprop="name"><i>${esc(o.t)}</i></h3>
+        ${l2?`<div class="l2">${esc(l2)}</div>`:''}
+        ${o.dim?`<div class="l3">${esc(o.dim)}</div>`:''}
+        <a class="ask" href="${lien(o)}">Demander le prix</a>
+      </div>
+    </article>`;
+  }).join('');
+});
+
+/* ---- fiche œuvre ---- */
+const lb=document.getElementById('lb'), lbIn=document.getElementById('lbIn');
+const works=[...document.querySelectorAll('.work')];
+const index=works.map(b=>DATA.find(o=>o.t===b.dataset.t));
+let cur=0;
+let vues=[], vue=0;
+function peindre(){
+  const img=lbIn.querySelector('.lb-main');
+  if(img) img.src=vues[vue];
+  lbIn.querySelectorAll('.lb-thumbs button').forEach((b,i)=>
+    b.dataset.on = (i===vue) ? '1' : '0');
+  const c=lbIn.querySelector('.lb-count');
+  if(c) c.textContent = vues.length>1 ? `${vue+1} / ${vues.length}` : '';
+}
+function show(n){
+  cur=(n+index.length)%index.length;
+  const o=index[cur], ok=!!works[cur].querySelector('img');
+  const l2=[tech(o),o.note].filter(Boolean).join(' · ');
+  vues=[o.src].concat(o.more||[]); vue=0;
+  const miniatures = vues.length>1
+    ? `<div class="lb-thumbs">${vues.map((s,i)=>
+        `<button data-i="${i}" data-on="${i===0?1:0}" aria-label="Vue ${i+1}"><img src="${esc(s)}" alt=""></button>`).join('')}</div>`
+    : '';
+  const flechesVue = vues.length>1
+    ? `<button class="vue-b vue-p" aria-label="Vue précédente">◂</button>
+       <button class="vue-b vue-n" aria-label="Vue suivante">▸</button>`
+    : '';
+  lbIn.innerHTML=`
+    <div class="lb-img">${ok
+      ? `<img class="lb-main" src="${esc(o.src)}" alt="${esc(o.t)}">`
+      : `<div class="lb-void">Photo à placer : ${esc(o.src)}</div>`}
+      ${flechesVue}
+      ${miniatures}</div>
+    <div class="lb-txt">
+      <div class="t"><i>${esc(o.t)}</i></div>
+      <div class="m">
+        <span>${esc(ARTISTE)}</span>
+        ${l2?`<span>${esc(l2)}</span>`:''}
+        ${o.dim?`<span>${esc(o.dim)}</span>`:''}
+      </div>
+      <a class="ask" href="${lien(o)}">Demander le prix</a>
+      <div class="addr">${esc(MAIL)}</div>
+      <div class="lb-count"></div>
+    </div>`;
+  lbIn.querySelectorAll('.lb-thumbs button').forEach(b=>
+    b.addEventListener('click',e=>{e.stopPropagation();vue=+b.dataset.i;peindre();}));
+  const vp=lbIn.querySelector('.vue-p'), vn=lbIn.querySelector('.vue-n');
+  if(vp) vp.addEventListener('click',e=>{e.stopPropagation();vue=(vue-1+vues.length)%vues.length;peindre();});
+  if(vn) vn.addEventListener('click',e=>{e.stopPropagation();vue=(vue+1)%vues.length;peindre();});
+  peindre();
+  lb.dataset.open='1';
+}
+const shut=()=>{lb.dataset.open='0';lbIn.innerHTML='';};
+works.forEach((b,i)=>b.addEventListener('click',()=>show(i)));
+lb.querySelector('.lb-x').addEventListener('click',shut);
+lb.querySelector('.lb-p').addEventListener('click',e=>{e.stopPropagation();show(cur-1);});
+lb.querySelector('.lb-n').addEventListener('click',e=>{e.stopPropagation();show(cur+1);});
+lb.addEventListener('click',e=>{if(e.target===lb)shut();});
+document.addEventListener('keydown',e=>{
+  if(lb.dataset.open!=='1')return;
+  if(e.key==='Escape')shut();
+  if(e.key==='ArrowLeft')show(cur-1);
+  if(e.key==='ArrowRight')show(cur+1);
+  if(e.key==='ArrowUp'&&vues.length>1){e.preventDefault();vue=(vue-1+vues.length)%vues.length;peindre();}
+  if(e.key==='ArrowDown'&&vues.length>1){e.preventDefault();vue=(vue+1)%vues.length;peindre();}
+});
+</script>
+</body>
+</html>
